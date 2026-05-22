@@ -155,7 +155,5 @@ This project has been pre-configured with a `.gitignore` to prevent committing d
 - `.env` (Private API keys)
 - `chroma_db/` (Local SQLite database state)
 
----
 
-## 📝 License
-This project is licensed under the MIT License.
+
