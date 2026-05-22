@@ -1,3 +1,4 @@
+import uuid
 import chromadb
 from app.services.embedder import embed_chunks, embed_query
 
@@ -7,7 +8,7 @@ collection = client.get_or_create_collection(name="pdf_chunks")
 
 def store_chunks(chunks: list[str]) -> int:
     embeddings = embed_chunks(chunks)
-    ids = [str(i) for i in range(len(chunks))]
+    ids = [str(uuid.uuid4()) for _ in range(len(chunks))]
     collection.add(
         documents=chunks,
         embeddings=embeddings,

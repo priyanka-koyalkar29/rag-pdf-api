@@ -1,0 +1,9 @@
+fastapi==0.136.1
+uvicorn==0.46.0
+PyMuPDF==1.27.2.3
+langchain-text-splitters==1.1.2
+sentence-transformers==5.5.0
+chromadb==1.5.9
+groq==1.2.0
+python-dotenv==1.2.2
+pydantic==2.13.4
